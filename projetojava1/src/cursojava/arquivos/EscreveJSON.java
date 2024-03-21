@@ -2,16 +2,17 @@ package cursojava.arquivos;
 
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonParser;
+import org.json.*;
+import com.google.gson.*;
+// import com.google.gson.Gson;
+// import com.google.gson.GsonBuilder;
+// import com.google.gson.JsonArray;
+// import com.google.gson.JsonElement;
+i// mport com.google.gson.JsonParser;
 
 public class EscreveJSON {
 	
@@ -33,21 +34,18 @@ public class EscreveJSON {
 		usuarios.add(usuario1);
 		usuarios.add(usuario2);
 		
+		// String jsonUser = new Gson().toJson(usuarios);
+		// System.out.println(jsonUser);
+		
 		
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
-				
-		// String jsonUser = new Gson().toJson(usuarios);
-		
 		String jsonUser = gson.toJson(usuarios);
 		
 		
 		System.out.println(jsonUser);
 		
 		FileWriter fileWriter = new FileWriter("/home/samsung/eclipse-workspace/eclipse-new-workspace/projetojava1/projetojava1/src/cursojava/arquivos/filejson.json", StandardCharsets.UTF_8);
-				
-				
-				
-				// ("/home/samsung/eclipse-workspace/eclipse-new-workspace/projetojava1/projetojava1/src/cursojava/arquivos/filejson.json");
+
 		
 		
 		fileWriter.write(jsonUser);

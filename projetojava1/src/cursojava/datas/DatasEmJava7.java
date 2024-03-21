@@ -8,7 +8,7 @@ public class DatasEmJava7 {
 	public static void main(String[] args) {
 		
 		LocalDate localDate = LocalDate.now();
-		System.out.println("Data atual" + localDate.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+		System.out.println("Data atual: " + localDate.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
 		
 		System.out.println("Dia da semana - nome : " + localDate.getDayOfWeek());
 		System.out.println("Dia da semana - número : " + localDate.getDayOfWeek().ordinal());

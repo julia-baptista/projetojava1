@@ -20,10 +20,9 @@ public class DatasEmJava9 {
 		
 		System.out.println(periodo.getYears());
 		System.out.println(periodo.getMonths());
-		System.out.println(periodo.getDays());
 		System.out.println(periodo.toTotalMonths());
-		System.out.println();
-		System.out.println();
+		System.out.println(periodo.getDays());
+	
 		
 		
 	}

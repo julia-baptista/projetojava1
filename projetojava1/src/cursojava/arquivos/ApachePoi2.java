@@ -2,7 +2,6 @@ package cursojava.arquivos;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -16,6 +15,8 @@ import org.apache.poi.ss.usermodel.Row;
 public class ApachePoi2 {
 	
 	public static void main(String[] args) throws IOException {
+		
+		/*Ler arquivos*/
 	
 		FileInputStream entrada =
 				new FileInputStream(new File("/home/samsung/eclipse-workspace/eclipse-new-workspace/projetojava1/projetojava1/src/cursojava/arquivos/arquivo_excel.xls"));
@@ -61,8 +62,8 @@ public class ApachePoi2 {
 		
 		entrada.close();
 		
-		for (Pessoa pessoa : pessoas) {
-			System.out.println();
+		for (Pessoa pessoa : pessoas) { /*Poderia gravar no banco de dados ou mandar email*/
+			System.out.println(pessoa);
 		}
 		
 	}

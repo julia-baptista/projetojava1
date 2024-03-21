@@ -16,6 +16,8 @@ public class ApachePoiEditando {
 	
 	public static void main(String[] args) throws Exception {
 		
+		/*Editando arquivo*/
+		
 		File file = new File("/home/samsung/eclipse-workspace/eclipse-new-workspace/projetojava1/projetojava1/src/cursojava/arquivos/arquivo_excel.xls");
 		
 		FileInputStream entrada = new FileInputStream(file);
@@ -32,8 +34,13 @@ public class ApachePoiEditando {
 			
 			int numeroCelulas = linha.getPhysicalNumberOfCells(); /*Quantidade de celulas*/
 
+			/* Adicionando celula*/
 			Cell cell = linha.createCell(numeroCelulas);/*Cria nova celula na linha*/
 			cell.setCellValue("5.487,20");
+			
+			/*Alterando célula já existente*/
+			String valorCelula = linha.getCell(0).getStringCellValue();
+			linha.getCell(0).setCellValue(valorCelula + " da Silva");
 			
 		}
 		

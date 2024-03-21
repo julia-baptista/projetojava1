@@ -21,6 +21,7 @@ public class DatasEmJava6 {
 		LocalDateTime dataAtualHoraAtual = LocalDateTime.now();
 		
 		System.out.println("Data e hora atual : " + dataAtualHoraAtual.format(DateTimeFormatter.ISO_DATE_TIME));
+		System.out.println("Data atual : " + dataAtualHoraAtual.format(DateTimeFormatter.ISO_DATE));
 		System.out.println("hora atual : " + dataAtualHoraAtual.format(DateTimeFormatter.ISO_TIME));
 		System.out.println("Data e hora atual : " + dataAtualHoraAtual.format(DateTimeFormatter.ISO_LOCAL_DATE));
 		System.out.println("Data e hora atual : " + dataAtualHoraAtual.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));

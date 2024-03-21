@@ -7,7 +7,6 @@ public class ObjetoFilaThread {
 	private String nome;
 	private String email;
 	
-	
 	public String getNome() {
 		return nome;
 	}
@@ -20,15 +19,10 @@ public class ObjetoFilaThread {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	
-	
 	@Override
 	public int hashCode() {
 		return Objects.hash(email, nome);
 	}
-	
-	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -40,8 +34,5 @@ public class ObjetoFilaThread {
 		ObjetoFilaThread other = (ObjetoFilaThread) obj;
 		return Objects.equals(email, other.email) && Objects.equals(nome, other.nome);
 	}
-	
-	
-	
 
 }

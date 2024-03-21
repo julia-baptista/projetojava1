@@ -11,9 +11,10 @@ class DatasEmJava {
 		
 		Calendar calendar = Calendar.getInstance();			
 		Date date = new Date();
+		/*Calendar é mais novo que o Date, recomendação é dar preferência pra o calendar*/
 		
 		
-		System.out.println("Data em milisegundos: " + date.getTime());
+		System.out.println("Data em milisegundos: " + date.getTime()); /* data em milisegundos*/
 		System.out.println("Calendar em milisegundos: " + calendar.getTimeInMillis());
 		
 		
@@ -45,18 +46,17 @@ class DatasEmJava {
 		/*----------Simple Date Format ---------------*/
 		
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm.ss");
-		System.out.println("Data em formato padrão: " + simpleDateFormat.format(date));
+		System.out.println("Data em formato padrão e String: " + simpleDateFormat.format(date));
 		System.out.println("Calendar em formato padrão: " + simpleDateFormat.format(calendar.getTime()));
 		
 		
-		simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm.ss");
 		System.out.println("Data em formato para banco de dados: " + simpleDateFormat.format(date));
 		System.out.println("Calendar em formato para banco de dados: " + simpleDateFormat.format(calendar.getTime()));
 		
+		simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		System.out.println("Objeto Date: " + simpleDateFormat.parse("1987-10-18")); /*Converte string para objeto data*/
-		
-		
-		
+			
 		
 	}
 

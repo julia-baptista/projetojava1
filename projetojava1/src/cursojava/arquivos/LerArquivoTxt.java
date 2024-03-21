@@ -14,8 +14,8 @@ public class LerArquivoTxt {
 		FileInputStream entradaArquivo =
 				new FileInputStream(new File("/home/samsung/eclipse-workspace/eclipse-new-workspace/projetojava1/projetojava1/src/cursojava/arquivos/arquivo.csv"));
 		
-		// FileInputStream entradaArquivo =
-				// new FileInputStream(new File("/home/samsung/eclipse-workspace/eclipse-new-workspace/projetojava1/projetojava1/src/cursojava/arquivos/arquivo.txt"));
+		//FileInputStream entradaArquivo =
+				//new FileInputStream(new File("/home/samsung/eclipse-workspace/eclipse-new-workspace/projetojava1/projetojava1/src/cursojava/arquivos/arquivo.txt"));
 		
 		Scanner lerArquivo = new Scanner(entradaArquivo, "UTF-8");
 		
@@ -48,7 +48,7 @@ public class LerArquivoTxt {
 		}
 		
 		for (Pessoa pessoa : pessoas) {
-			System.out.println();
+			System.out.println(pessoa);
 		}
 		
 	}

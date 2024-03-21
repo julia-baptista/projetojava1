@@ -10,7 +10,7 @@ public class DatasEmJava8 {
 		
 		Instant inicio = Instant.now();
 		
-		Thread.sleep(2000);
+		Thread.sleep(2000); /*Pode ser um processo com um tempo qualquer que não conhecemos*/
 		
 		Instant ifinal =Instant.now();
 		

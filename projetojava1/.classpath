@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java-17-openjdk-amd64">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="src/lib/poi-5.0.0.jar"/>
-	<classpathentry kind="lib" path="src/lib/commons-math3-3.6.1.jar"/>
+	<classpathentry kind="src" path="src/main/java"/>
 	<classpathentry kind="lib" path="src/lib/commons-collections4-4.4.jar"/>
-	<classpathentry kind="lib" path="src/lib/gson-2.8.6.jar"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="lib" path="src/lib/commons-math3-3.6.1.jar"/>
+	<classpathentry kind="lib" path="src/lib/gson-2.8.6.jar" sourcepath="/home/samsung/eclipse-workspace/eclipse-new-workspace/projetojava1/projetojava1/src/lib/gson-2.8.6-javadoc.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/home/samsung/eclipse-workspace/eclipse-new-workspace/projetojava1/projetojava1/src/lib/gson-2.8.6-javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="src/lib/gson-2.8.6-javadoc.jar" sourcepath="src/lib/gson-2.8.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="src/lib/poi-5.0.0.jar"/>
+	<classpathentry kind="lib" path="src/lib/error_prone_annotations-2.25.0.jar"/>
+	<classpathentry kind="con" path="org.jboss.ide.eclipse.as.classpath.core.javaee-5.0">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.jboss.ide.eclipse.as.classpath.core.ejb3.classpathContainer/WildFly 20">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="build/classes"/>
 </classpath>

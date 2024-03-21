@@ -16,10 +16,12 @@ public class DatasEmJava3 {
 		
 		
 		calendar.add(Calendar.DAY_OF_MONTH, 5);
-		calendar.add(Calendar.DAY_OF_MONTH, 1);
-		calendar.add(Calendar.DAY_OF_WEEK, 10);
+		calendar.add(Calendar.MONTH, 1);
+		calendar.add(Calendar.YEAR, 2);
 		
 		System.out.println(new SimpleDateFormat("dd-MM-yyyy").format(calendar.getTime()));
+		
+		
 	}
 
 }

@@ -15,6 +15,8 @@ public class ApachePoi {
 	
 	public static void main(String[] args) throws IOException {
 		
+		/*Gravar arquivos*/
+		
 		
 		File file = new File("/home/samsung/eclipse-workspace/eclipse-new-workspace/projetojava1/projetojava1/src/cursojava/arquivos/arquivo_excel.xls");
 		
@@ -70,7 +72,7 @@ public class ApachePoi {
 		saida.flush();
 		saida.close();
 		
-		System.out.println();
+		System.out.println("Planilha foi criada");
 		
 	}
 

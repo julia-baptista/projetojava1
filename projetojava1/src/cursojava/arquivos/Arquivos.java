@@ -10,6 +10,8 @@ public class Arquivos {
 	
 	public static void main(String[] args) throws IOException {
 		
+		/* Escrever arquivos txt*/
+		
 		Pessoa pessoa1 = new Pessoa();
 		pessoa1.setEmail("pessoa1@gmail.com");
 		pessoa1.setIdade(50);
@@ -26,7 +28,7 @@ public class Arquivos {
 		pessoa3.setIdade(40);
 		pessoa3.setNome("Maria jesus");
 		
-		
+		/*Essa lista pode vir do banco de dados ou qualquer fonte de dados*/
 		List<Pessoa> pessoas = new ArrayList<Pessoa>();
 		pessoas.add(pessoa1);
 		pessoas.add(pessoa2);
@@ -60,9 +62,9 @@ public class Arquivos {
 			escrever_no_arquivo2.write(p.getNome() + ";" + p.getEmail() + ";" + p.getIdade() + "\n");
 		}
 		
-		escrever_no_arquivo.flush();
+		escrever_no_arquivo.flush(); /*Para persistir as alterações no arquivo*/
 		escrever_no_arquivo2.flush();
-		escrever_no_arquivo.close();
+		escrever_no_arquivo.close(); /*Para fecchar o arquivo*/
 		escrever_no_arquivo2.close();
 		
 	}
